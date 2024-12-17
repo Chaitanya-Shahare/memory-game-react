@@ -1,0 +1,35 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.board {
+  display: grid;
+  width: calc(70px * 6);
+  height: calc(70px * 6);
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  justify-self: center;
+  gap: 4px;
+}
+
+.card {
+  background: none;
+  &--displayed {
+    border: 1px solid grey;
+    background: transparent;
+  }
+  &--hidden {
+    background-color: grey;
+  }
+
+  &--disabled {
+    background-color: rgb(66, 0, 0);
+  }
+  &--removed {
+    background: none;
+    border: none;
+  }
+}

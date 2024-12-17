@@ -1,8 +1,12 @@
-import { useState } from "react";
-import "./App.css";
+import "./App.scss";
+import GameBoard from "./components/GameBoard";
 
 function App() {
-  return <>kasldfjlakjsdf</>;
+  return (
+    <>
+      <GameBoard />
+    </>
+  );
 }
 
 export default App;
